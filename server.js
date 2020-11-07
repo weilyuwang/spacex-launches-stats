@@ -1,8 +1,8 @@
-import express from "express";
-import cors from "cors";
-import { graphqlHTTP } from "express-graphql";
-import schema from "./schema.js";
-import path from "path";
+const express = require("express");
+const cors = require("cors");
+const { graphqlHTTP } = require("express-graphql");
+const schema = require("./schema.js");
+const path = require("path");
 
 const app = express();
 

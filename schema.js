@@ -1,5 +1,5 @@
-import axios from "axios";
-import graphql from "graphql";
+const axios = require("axios");
+const graphql = require("graphql");
 
 // Define the Rocket type
 const RocketType = new graphql.GraphQLObjectType({
@@ -71,4 +71,4 @@ const RootQuery = new graphql.GraphQLObjectType({
 
 const schema = new graphql.GraphQLSchema({ query: RootQuery });
 
-export default schema;
+module.exports = schema;
